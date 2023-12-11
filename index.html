@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <button onclick="div1()" id="div1"> Div1 </button>
+    <button id="div2"> Div2 </button>
+    <button id="div3"> Div3 </button>
+    <button id="div4"> Div4 </button>
+    
+
+    <div id="display" style="display: flex;justify-content: center;align-items:center;flex-wrap:wrap">
+        
+    </div>
+
+
+    <div class="" id="get">
+        Lorem ipsum dolor sit.
+    </div>
+
+    <script>
+
+        console.log(document.getElementById("get").innerHTML)
+    </script>
+
+
+    <script>
+
+        function div1(){
+
+        //     const div1 = document.getElementById('div1')
+        // div1.style.color='red'
+        // div1.style.backgroundColor='green'
+
+
+            let div = document.createElement("div")
+
+            div.innerHTML = 'Display Screen'
+            div.style.width="300px"
+            div.style.color="white"
+
+            div.style.textAlign="center"
+            div.style.height="300px"
+            div.style.backgroundColor="green"
+            div.style.borderRadius="10px"
+            div.style.padding="10px"
+            div.style.margin="10px"
+
+            
+
+            
+            let dislay = document.getElementById("display")
+
+            dislay.appendChild(div)
+
+            console.log(div)
+
+
+
+        }
+
+
+        // console.log(document.body)
+
+
+       
+        // console.log()
+
+
+
+
+    </script>
+    
+</body>
+</html>
